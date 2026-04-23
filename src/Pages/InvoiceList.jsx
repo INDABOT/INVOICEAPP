@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import InvoiceCard from '../components/InvoiceCard';
-import Filter from '../components/Filter';
-import InvoiceForm from '../components/InvoiceForm';
-import { useInvoices } from '../context/InvoiceContext';
+import InvoiceCard from '../components/InvoiceCard.jsx';
+import Filter from '../components/Filter.jsx';
+import InvoiceForm from '../components/InvoiceForm.jsx';
+import { useInvoices } from '../context/InvoiceContext.jsx';
 
 export default function InvoiceList() {
   const { invoices, allInvoicesLength } = useInvoices();

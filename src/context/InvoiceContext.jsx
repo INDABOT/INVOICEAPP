@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { initialInvoices } from '../data/data';
+import { initialInvoices } from '../Data/data';
 
 // 1. Create the Context
 const InvoiceContext = createContext();
