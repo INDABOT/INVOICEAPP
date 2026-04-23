@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* Base typography setup */
+    @apply font-sans antialiased;
+    
+    /* Light Mode Defaults */
+    @apply bg-light text-ink-dark transition-colors duration-300 ease-in-out;
+  }
+
+  /* Dark Mode Defaults */
+  .dark body {
+    @apply bg-dark text-ink-light;
+  }
+
+  /* Form Element Resets */
+  input, select, textarea {
+    @apply outline-none focus:ring-1 focus:ring-primary border-transparent transition-all;
+  }
+}
+
+@layer components {
+  .label {
+    @apply mb-2 block text-sm text-ink-gray dark:text-ink-blueish font-medium;
+  }
+  .input {
+    @apply w-full rounded border border-ink-blueish bg-white p-4 font-bold text-ink-dark outline-none focus:border-primary dark:border-dark-border dark:bg-dark-surface dark:text-ink-light transition-all;
+  }
+}
